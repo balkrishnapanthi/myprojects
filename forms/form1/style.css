@@ -1,0 +1,105 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.forms {
+background: white;
+    width:40%;
+    margin:auto;
+   
+   padding: 10px;
+   padding-top:20px;
+   padding-left: 20px;
+   padding-right: 20px;
+
+}
+
+#form1-heading {
+    width:40%;
+    margin:auto;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    background-color: rgb(3, 3, 24);
+}
+.form1-div{
+
+    
+   
+margin-top:5px;
+margin-bottom:20px;
+    padding:10px;
+    padding-top: 20px;
+    background-color: rgb(229, 214, 151);
+}
+
+input ,textarea{
+     box-shadow: 2px 2px rgb(168, 157, 157);
+    width:100%;
+    border-color: white;
+}
+.policy {
+
+    font-size: small;
+   
+   padding:2px;
+}
+
+#form1-policy {
+    
+
+
+}
+
+#button-and-policy {
+
+    float:right;
+}
+#checkbox{
+    width: fit-content;
+    display:inline;
+    box-shadow: none;
+    
+}
+
+form p {
+
+    margin-top:4px;
+}
+
+.btn{
+    padding:5px;
+    width:8em;
+    color: white;
+    background-color: darkblue;
+    border: none;
+    border-radius: 4px;
+}
+li {
+    list-style: none;
+    font-weight:600;
+    margin-left: -34px;
+
+}
+
+
+li::before {
+    
+content:counter(list-item);
+list-style-position: outside;
+    background: darkblue;
+    color:white;
+    border-radius: 50%;
+    padding-inline: 1ch;
+    margin-inline-end: 6px;
+    border: 2px solid;
+}
+
+#submitandpolicy {
+
+    background:none;
+}
