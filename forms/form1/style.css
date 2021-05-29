@@ -103,3 +103,36 @@ list-style-position: outside;
 
     background:none;
 }
+
+@media (max-width:585px)
+{
+#form1-heading , .forms{
+
+    width:95%;
+}
+.btn {
+
+    width:100%;
+}
+#button-and-policy {
+
+    float:none;
+}
+
+}
+@media (max-width:1080px) and (min-width:586px)
+{
+    #form1-heading , .forms{
+
+        width:60%;
+    }
+    .btn {
+    
+        width:100%;
+    }
+    #button-and-policy {
+    
+        float:none;
+    }
+
+}
