@@ -63,7 +63,7 @@ input ,textarea{
     width: fit-content;
     display:inline;
     box-shadow: none;
-    
+    margin-top:15px;
 }
 
 form p {
