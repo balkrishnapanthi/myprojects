@@ -45,7 +45,7 @@ console.log("No date entered in the input field");
             console.log("This is current time : " + currentTime);
             var timeLeft = deadline - currentTime;
             console.log("This is time left : " + timeLeft);
-            var days = Math.floor((((timeLeft / 1000) / 60) / 60) / 24);
+            var days = Math.floor(timeLeft / (1000*60*60*24));
             console.log("Days left : " + days);
 
             var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
