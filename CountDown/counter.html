@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Time Counter</title>
+</head>
+
+<body>
+    <h1>Time Counter</h1>
+    <div id="display">
+        <div class="display">
+            <span id="days"></span>
+            <span id="hours"></span>
+            <span id="mins"></span>
+            <span id="secs"></span>
+        </div>
+        <div> <span>days</span>
+            <span >hours</span>
+            <span >mins</span>
+            <span >secs</span>
+        </div>
+    </div>
+    <p id="timeup"></p>
+    <div id="input">
+    <input type="text" id="dateinput" placeholder="YY/MM/DD"><br>
+    <input type="button" class="btn"onclick="count()" value="Count">
+    </div>
+
+    <script>
+       
+        function count () {
+            var date= Date.parse(document.getElementById("dateinput").value);
+            console.log(date);
+            if( Number.isNaN(date)=== true){
+console.log("ahgegeadfsgufige8rqwjalfugdahdbfugdafhahufhafuhadgfuh");
+            var date=new Date().getTime();
+             }
+            var deadline = new Date(date).getTime();
+            console.log("This is deadline : " + deadline);
+            var currentTime = new Date().getTime();
+            console.log("This is current time : " + currentTime);
+            var timeLeft = deadline - currentTime;
+            console.log("This is time left : " + timeLeft);
+            var days = Math.floor((((timeLeft / 1000) / 60) / 60) / 24);
+            console.log("Days left : " + days);
+
+            var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            console.log("Hours left : " + hours);
+
+            var mins = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            console.log("Mins left : " + mins);
+            var secs = Math.floor((timeLeft % (1000 * 60)) / (1000));
+            console.log("Secs left : " + secs);
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("mins").innerHTML = mins;
+            document.getElementById("secs").innerHTML = secs;
+           
+            if (timeLeft <=0) {
+                clearInterval(count);
+                document.getElementById("days").innerHTML = "00";
+            document.getElementById("hours").innerHTML ="00";
+            document.getElementById("mins").innerHTML ="00";
+            document.getElementById("secs").innerHTML = "00";
+                document.getElementById("timeup").innerHTML = "Time Up";
+            }
+            setInterval(count, 1000);
+        }
+        
+    </script>
+</body>
+
+</html>

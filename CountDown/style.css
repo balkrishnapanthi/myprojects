@@ -1,0 +1,76 @@
+* {
+
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+background-color: rgb(204, 191, 174);
+
+}
+
+h1 {
+margin-top:18%;
+   text-align: center;
+}
+#display {
+
+    text-align: center;
+    margin-top:20px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.display span{
+    display:inline-block;
+    width: 50px;
+    height: 40px;
+    font-size: larger;
+    font-weight: bold;
+    /* border:2px solid black; */
+    box-shadow: 4px 4px 4px 4px  rgb(146, 137, 125);;
+    margin:4px;
+    padding:2px;
+}
+div span{
+    display:inline-block;
+    width: 50px;
+    height: 40px;
+    font-size: larger;
+    font-weight: bold;
+   
+    margin:6px;
+    padding:2px;
+}
+
+
+
+input {
+    font-size: larger;
+    margin:2px;
+    padding:2px;
+width:208px;
+    text-align: center;
+    border:none;
+    box-shadow: 4px 4px 4px 4px  rgb(146, 137, 125);;
+}
+#input {
+
+    text-align: center;
+}
+#dateinput{
+
+    margin-bottom:8px;
+}
+.btn{
+border-radius:8px;
+background-color: skyblue;
+
+}
+#timeup {
+text-align: center;
+font-size:xx-large;
+margin:4px;
+font-weight: bold;
+}
